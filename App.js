@@ -12,16 +12,14 @@ import {
   View
 } from 'react-native';
 
+import WeatherScreen from './src/components/WeatherScreen';
+
 export default class App extends Component {
-  state ={
-    isLoaded: false
-  }
   render() {
     console.log('Hi');
-    const{isLoaded} = this.state
     return (
       <View style={styles.container}>
-        {isLoaded? null: <View> Testing MY app </View>}
+        <WeatherScreen/>
       </View>
     );
   }
